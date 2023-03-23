@@ -1,0 +1,62 @@
+<main
+  class="bg-gray-50 h-screen w-screen flex flex-col items-center justify-center px-4">
+  <div
+    class="bg-white p-4 rounded-md min-w-[250px] max-w-[600px] w-full flex flex-col gap-y-4 shadow-md">
+    <h2 class="text-center text-2xl font-semibold">Login Form</h2>
+
+    <form
+      (ngSubmit)="submit()"
+      [formGroup]="loginForm"
+      class="flex flex-col gap-y-5"
+      autocomplete="off">
+      <!-- email -->
+      <div class="flex flex-col gap-2 items-start relative">
+        <label class="text-sm" for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="rounded-md w-full"
+          formControlName="email" />
+        <span
+          *ngIf="email?.touched && email?.hasError('required')"
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <!-- Password -->
+      <div class="flex flex-col gap-2 items-start relative">
+        <label class="text-sm" for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="rounded-md w-full"
+          formControlName="password" />
+        <span
+          *ngIf="password?.touched && password?.hasError('required')"
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <p class="text-red-600 text-center" *ngIf="isUserValid">
+        Usuario o contraseña invalida
+      </p>
+
+      <div class="flex flex-col justify-end items-end gap-4">
+        <button
+          type="submit"
+          class="w-full py-3 px-1.5 rounded-md bg-cyan-500 transition-colors duration-300 hover:text-white hover:bg-cyan-600">
+          Login
+        </button>
+      </div>
+    </form>
+
+    <div class="text-center my-3">
+      <p>
+        ¿Aun no tienes cuenta?
+        <a routerLink="/auth/register" class="text-amber-500">Registro</a>
+      </p>
+    </div>
+  </div>
+</main>
