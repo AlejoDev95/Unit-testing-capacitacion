@@ -1,0 +1,16 @@
+<figure
+  class="flex flex-col h-96 w-full hover:cursor-pointer group"
+  (click)="verDetalles()">
+  <div class="w-full relative flex-1 overflow-hidden rounded-t-lg">
+    <img
+      class="object-cover group-hover:scale-125 transition duration-300"
+      [ngSrc]="movie.image"
+      alt="Image de prueba"
+      priority
+      fill />
+  </div>
+
+  <figcaption class="truncate text-center p-2">
+    <p>{{ movie.title }}</p>
+  </figcaption>
+</figure>

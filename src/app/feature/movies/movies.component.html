@@ -1,0 +1,19 @@
+<app-header></app-header>
+<nav class="h-14 bg-gray-100 flex items-center px-4 py-2 justify-center gap-4">
+  <a
+    class="hover:text-amber-500 text-lg transition-colors duration-300"
+    routerLink="list"
+    routerLinkActive="text-amber-600">
+    List
+  </a>
+  <a
+    class="hover:text-amber-500 text-lg transition-colors duration-300"
+    routerLink="register"
+    routerLinkActive="text-amber-600">
+    Register
+  </a>
+</nav>
+
+<div class="px-3 sm:px-0 sm:container mx-auto pt-4 pb-6">
+  <router-outlet></router-outlet>
+</div>
