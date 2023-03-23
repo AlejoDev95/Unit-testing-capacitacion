@@ -1,0 +1,51 @@
+{
+  "movies": [
+    {
+      "title": "Pelicula 1054",
+      "releaseDate": "2020-01-01",
+      "image": "https://picsum.photos/640/640?r=5204",
+      "category": "comedia",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget risus eros. Ut pulvinar, dui et cursus imperdiet, turpis eros dapibus ex, eu facilisis massa metus et sapien. Sed dui est, eleifend non ultrices quis, consequat ac mi. Aenean sit amet ullamcorper ipsum. Ut magna lacus, laoreet ac consequat sed, feugiat eget libero. Integer et neque augue. Proin tincidunt augue ante, ut iaculis ex accumsan at. Cras lobortis scelerisque velit vitae vulputate. Nulla in varius felis. Curabitur commodo mauris ut lacus consequat, eu ullamcorper est semper. Donec consequat sapien turpis, eu porttitor neque pretium posuere. Nulla nisi dolor, vulputate sed odio id, congue aliquam quam. Vivamus tincidunt, lorem id blandit convallis, purus ex facilisis dui, ut posuere eros magna vitae dolor.",
+      "id": "4bo6gdq7khllfqy1ug8"
+    },
+    {
+      "id": "86e9v2nq2allft0mpt2",
+      "title": "El ataque de los otros",
+      "releaseDate": "1996-02-05",
+      "image": "https://picsum.photos/640/640?r=2145",
+      "category": "comedia",
+      "description": "aLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñaaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñkdlñkadslñ"
+    },
+    {
+      "title": "Pelicula 20",
+      "releaseDate": "2023-04-02",
+      "image": "https://picsum.photos/640/640?r=4785",
+      "category": "catastrofe",
+      "description": "Es una peli interesante",
+      "id": "mz7xe9lsy38lgiize4a"
+    }
+  ],
+  "users": [
+    {
+      "id": "h6cr961fw9ulfrjo3xh",
+      "userName": "usuario-1",
+      "email": "usuario-1@email.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "92f49mechmnlfrjv3u1",
+      "userName": "usuario-2",
+      "email": "usuario-2@email.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "nzsefsizqgllfrjwbnh",
+      "userName": "usuario-3",
+      "email": "usuario-3@email.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    }
+  ]
+}
