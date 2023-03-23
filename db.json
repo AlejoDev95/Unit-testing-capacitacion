@@ -1,0 +1,155 @@
+{
+  "movies": [
+    {
+      "title": "Pelicula 1054",
+      "releaseDate": "2020-01-01",
+      "image": "https://picsum.photos/640/640?r=5204",
+      "category": "comedia",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget risus eros. Ut pulvinar, dui et cursus imperdiet, turpis eros dapibus ex, eu facilisis massa metus et sapien. Sed dui est, eleifend non ultrices quis, consequat ac mi. Aenean sit amet ullamcorper ipsum. Ut magna lacus, laoreet ac consequat sed, feugiat eget libero. Integer et neque augue. Proin tincidunt augue ante, ut iaculis ex accumsan at. Cras lobortis scelerisque velit vitae vulputate. Nulla in varius felis. Curabitur commodo mauris ut lacus consequat, eu ullamcorper est semper. Donec consequat sapien turpis, eu porttitor neque pretium posuere. Nulla nisi dolor, vulputate sed odio id, congue aliquam quam. Vivamus tincidunt, lorem id blandit convallis, purus ex facilisis dui, ut posuere eros magna vitae dolor.",
+      "id": "4bo6gdq7khllfqy1ug8"
+    },
+    {
+      "id": "86e9v2nq2allft0mpt2",
+      "title": "El ataque de los otros",
+      "releaseDate": "1996-02-05",
+      "image": "https://picsum.photos/640/640?r=2145",
+      "category": "comedia",
+      "description": "aLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñaaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñkdlñkadslñ"
+    },
+    {
+      "title": "Pelicula 20",
+      "releaseDate": "2023-04-02",
+      "image": "https://picsum.photos/640/640?r=4785",
+      "category": "catastrofe",
+      "description": "Es una peli interesante",
+      "id": "mz7xe9lsy38lgiize4a"
+    },
+    {
+      "id": "o0phuwqhkpllh286kwy",
+      "title": "El nuevo inicio",
+      "releaseDate": "2017-06-13",
+      "image": "https://picsum.photos/640/640?r=7845",
+      "category": "drama",
+      "description": "Proin at elit turpis. Maecenas imperdiet libero non pretium varius. Suspendisse in volutpat est. Praesent laoreet fermentum erat vel malesuada. Sed elementum egestas arcu sit amet hendrerit. Praesent ultricies, mi faucibus auctor elementum, ligula justo consectetur eros, eu tempus dolor lacus eu urna. Quisque sit amet congue urna, eu porttitor lacus. Ut pulvinar ex in diam lacinia, eget tempor lorem ultrices. Vivamus volutpat porttitor malesuada. Aliquam erat volutpat. Quisque aliquam nulla in vulputate consequat. Duis varius ligula lacus, a aliquam enim commodo et. Cras dictum sem in tempor convallis. Sed facilisis eu ipsum id malesuada. Vestibulum eget libero vitae nunc blandit dignissim."
+    },
+    {
+      "id": "yilndwvpjzjlh289vf5",
+      "title": "El regreso del terror",
+      "releaseDate": "2022-11-01",
+      "image": "https://picsum.photos/640/640?r=1574",
+      "category": "documentales",
+      "description": "Etiam vitae lacus iaculis, euismod lectus ac, tincidunt lacus. Curabitur non accumsan arcu. Pellentesque rhoncus, leo ut tempor suscipit, velit leo congue libero, et malesuada velit dui sed felis. Aliquam tristique lorem eleifend, finibus nibh vel, hendrerit ante. Aenean imperdiet nisi eget nisl fermentum, et dignissim nisl fermentum. Quisque magna neque, "
+    },
+    {
+      "id": "i1kyxz1s5lqlh28djs7",
+      "title": "Las aventuras del nuevo",
+      "releaseDate": "2005-03-01",
+      "image": "https://picsum.photos/640/640?r=1548",
+      "category": "comedia",
+      "description": "lobortis eget turpis eu, tincidunt porta nunc. In lacinia nibh nec urna volutpat, eu maximus odio consequat. Pellentesque pretium massa ac vulputate scelerisque. Maecenas tincidunt ipsum et nulla posuere commodo. Sed id sapien dolor. Morbi a ex sit amet purus vulputate interdum."
+    },
+    {
+      "id": "nodn0gjnesalh28ex48",
+      "title": "Dragon ball af",
+      "releaseDate": "1995-12-06",
+      "image": "https://picsum.photos/640/640?r=8521",
+      "category": "comedia",
+      "description": "eu varius urna lobortis. In vestibulum sollicitudin ligula eget tempor. Pellentesque aliquam maximus turpis at hendrerit. Aenean sed augue eleifend, varius sem vel, dignissim ligula. Nullam convallis id turpis sed porttitor. Cras nec lorem lacus. In at urna id risus auctor volutpat. Etiam ac tristique sapien, non posuere nisi."
+    },
+    {
+      "id": "cp8r1yq2aglh28hs1u",
+      "title": "Nueva pelicula de accion",
+      "releaseDate": "1998-10-25",
+      "image": "https://picsum.photos/640/640?r=7532",
+      "category": "accion",
+      "description": "tempor ut lacus eget, faucibus mattis felis. Vivamus ipsum ligula, elementum a tempus sed, scelerisque a ipsum. Mauris sagittis, dolor id hendrerit posuere, dui elit dapibus libero, tincidunt eleifend nibh arcu a lacus. Vivamus lobortis odio sapien, at tincidunt purus egestas quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec id massa tellus. Suspendisse potenti. Maecenas ac nibh urna. Morbi venenatis felis nec consequat finibus."
+    },
+    {
+      "title": "Pelicula 1054",
+      "releaseDate": "2020-01-01",
+      "image": "https://picsum.photos/640/640?r=5204",
+      "category": "comedia",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget risus eros. Ut pulvinar, dui et cursus imperdiet, turpis eros dapibus ex, eu facilisis massa metus et sapien. Sed dui est, eleifend non ultrices quis, consequat ac mi. Aenean sit amet ullamcorper ipsum. Ut magna lacus, laoreet ac consequat sed, feugiat eget libero. Integer et neque augue. Proin tincidunt augue ante, ut iaculis ex accumsan at. Cras lobortis scelerisque velit vitae vulputate. Nulla in varius felis. Curabitur commodo mauris ut lacus consequat, eu ullamcorper est semper. Donec consequat sapien turpis, eu porttitor neque pretium posuere. Nulla nisi dolor, vulputate sed odio id, congue aliquam quam. Vivamus tincidunt, lorem id blandit convallis, purus ex facilisis dui, ut posuere eros magna vitae dolor.",
+      "id": "4bo6gdq7khllfqy1ug8"
+    },
+    {
+      "id": "86e9v2nq2allft0mpt2",
+      "title": "El ataque de los otros",
+      "releaseDate": "1996-02-05",
+      "image": "https://picsum.photos/640/640?r=2145",
+      "category": "comedia",
+      "description": "aLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñaaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñaLÑdskalñdkaslñdkalsñdkñldskdñalkalñkadslñkadñlkasdlñakdlñkadslñkdlñkadslñ"
+    },
+    {
+      "title": "Pelicula 20",
+      "releaseDate": "2023-04-02",
+      "image": "https://picsum.photos/640/640?r=4785",
+      "category": "catastrofe",
+      "description": "Es una peli interesante",
+      "id": "mz7xe9lsy38lgiize4a"
+    },
+    {
+      "id": "o0phuwqhkpllh286kwy",
+      "title": "El nuevo inicio",
+      "releaseDate": "2017-06-13",
+      "image": "https://picsum.photos/640/640?r=7845",
+      "category": "drama",
+      "description": "Proin at elit turpis. Maecenas imperdiet libero non pretium varius. Suspendisse in volutpat est. Praesent laoreet fermentum erat vel malesuada. Sed elementum egestas arcu sit amet hendrerit. Praesent ultricies, mi faucibus auctor elementum, ligula justo consectetur eros, eu tempus dolor lacus eu urna. Quisque sit amet congue urna, eu porttitor lacus. Ut pulvinar ex in diam lacinia, eget tempor lorem ultrices. Vivamus volutpat porttitor malesuada. Aliquam erat volutpat. Quisque aliquam nulla in vulputate consequat. Duis varius ligula lacus, a aliquam enim commodo et. Cras dictum sem in tempor convallis. Sed facilisis eu ipsum id malesuada. Vestibulum eget libero vitae nunc blandit dignissim."
+    },
+    {
+      "id": "yilndwvpjzjlh289vf5",
+      "title": "El regreso del terror",
+      "releaseDate": "2022-11-01",
+      "image": "https://picsum.photos/640/640?r=1574",
+      "category": "documentales",
+      "description": "Etiam vitae lacus iaculis, euismod lectus ac, tincidunt lacus. Curabitur non accumsan arcu. Pellentesque rhoncus, leo ut tempor suscipit, velit leo congue libero, et malesuada velit dui sed felis. Aliquam tristique lorem eleifend, finibus nibh vel, hendrerit ante. Aenean imperdiet nisi eget nisl fermentum, et dignissim nisl fermentum. Quisque magna neque, "
+    },
+    {
+      "id": "i1kyxz1s5lqlh28djs7",
+      "title": "Las aventuras del nuevo",
+      "releaseDate": "2005-03-01",
+      "image": "https://picsum.photos/640/640?r=1548",
+      "category": "comedia",
+      "description": "lobortis eget turpis eu, tincidunt porta nunc. In lacinia nibh nec urna volutpat, eu maximus odio consequat. Pellentesque pretium massa ac vulputate scelerisque. Maecenas tincidunt ipsum et nulla posuere commodo. Sed id sapien dolor. Morbi a ex sit amet purus vulputate interdum."
+    },
+    {
+      "id": "nodn0gjnesalh28ex48",
+      "title": "Dragon ball af",
+      "releaseDate": "1995-12-06",
+      "image": "https://picsum.photos/640/640?r=8521",
+      "category": "comedia",
+      "description": "eu varius urna lobortis. In vestibulum sollicitudin ligula eget tempor. Pellentesque aliquam maximus turpis at hendrerit. Aenean sed augue eleifend, varius sem vel, dignissim ligula. Nullam convallis id turpis sed porttitor. Cras nec lorem lacus. In at urna id risus auctor volutpat. Etiam ac tristique sapien, non posuere nisi."
+    },
+    {
+      "id": "cp8r1yq2aglh28hs1u",
+      "title": "Nueva pelicula de accion",
+      "releaseDate": "1998-10-25",
+      "image": "https://picsum.photos/640/640?r=7532",
+      "category": "accion",
+      "description": "tempor ut lacus eget, faucibus mattis felis. Vivamus ipsum ligula, elementum a tempus sed, scelerisque a ipsum. Mauris sagittis, dolor id hendrerit posuere, dui elit dapibus libero, tincidunt eleifend nibh arcu a lacus. Vivamus lobortis odio sapien, at tincidunt purus egestas quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec id massa tellus. Suspendisse potenti. Maecenas ac nibh urna. Morbi venenatis felis nec consequat finibus."
+    }
+  ],
+  "users": [
+    {
+      "id": "h6cr961fw9ulfrjo3xh",
+      "userName": "usuario-1",
+      "email": "usuario-1@email.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "92f49mechmnlfrjv3u1",
+      "userName": "usuario-2",
+      "email": "usuario-2@email.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "nzsefsizqgllfrjwbnh",
+      "userName": "usuario-3",
+      "email": "usuario-3@email.com",
+      "password": "123456",
+      "confirmPassword": "123456"
+    }
+  ]
+}
