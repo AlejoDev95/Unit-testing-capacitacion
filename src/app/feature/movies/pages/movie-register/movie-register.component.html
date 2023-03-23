@@ -1,0 +1,121 @@
+<section class="px-4">
+  <h2 class="text-center text-lg font-semibold mb-4">Movie Register</h2>
+  <div class="flex">
+    <form
+      autocomplete="off"
+      class="flex-1 flex flex-col gap-y-4 px-4"
+      [formGroup]="registerForm"
+      (ngSubmit)="onSubmit()">
+      <!-- Title input -->
+      <div class="flex flex-col gap-2 items-start relative">
+        <label class="text-sm" for="title">Title</label>
+        <input
+          type="text"
+          id="title"
+          class="rounded-md w-full"
+          formControlName="title" />
+        <span
+          *ngIf="inputTitle?.touched && inputTitle?.hasError('required')"
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <!-- Date input -->
+      <div class="flex flex-col gap-2 items-start">
+        <label class="text-sm" for="date">Release date</label>
+        <input
+          type="date"
+          id="date"
+          class="rounded-md w-full"
+          formControlName="releaseDate" />
+        <span
+          *ngIf="
+            inputReleaseDate?.touched && inputReleaseDate?.hasError('required')
+          "
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <!-- Image url input -->
+      <div class="flex flex-col gap-2 items-start">
+        <label class="text-sm" for="image">Url image</label>
+        <input
+          type="text"
+          id="image"
+          class="rounded-md w-full"
+          formControlName="image" />
+        <span
+          *ngIf="inputUrlImage?.touched && inputUrlImage?.hasError('required')"
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <!-- Category input -->
+      <div class="flex flex-col gap-2 items-start">
+        <label class="text-sm" for="categoria">Category</label>
+        <select
+          id="categoria"
+          class="rounded-md w-full"
+          formControlName="category">
+          <option value="accion">Acción</option>
+          <option value="aventura">Aventura</option>
+          <option value="catastrofe">Catástrofe</option>
+          <option value="ciencia_ficcion">Ciencia Ficción</option>
+          <option value="comedia">Comedia</option>
+          <option value="documentales">Documentales</option>
+          <option value="drama">Drama</option>
+          <option value="fantasia">Fantasía</option>
+        </select>
+        <span
+          *ngIf="inputCategory?.touched && inputCategory?.hasError('required')"
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <!-- Description input -->
+      <div class="flex flex-col gap-2 items-start">
+        <label class="text-sm" for="image">Description</label>
+        <textarea
+          id="image"
+          class="rounded-md w-full"
+          rows="3"
+          formControlName="description"></textarea>
+        <span
+          *ngIf="
+            inputDescription?.touched && inputDescription?.hasError('required')
+          "
+          class="text-sm text-red-500 font-semibold">
+          The field is required
+        </span>
+      </div>
+
+      <div class="flex flex-col justify-end items-end gap-4 md:col-span-2">
+        <button
+          type="submit"
+          class="w-full py-3 px-1.5 rounded-md bg-cyan-500 transition-colors duration-300 hover:text-white hover:bg-cyan-600">
+          {{ textSubmitButton }}
+        </button>
+        <button
+          (click)="clearForm()"
+          type="reset"
+          class="w-full py-3 px-1.5 rounded-md bg-red-500 transition-colors duration-300 hover:text-white hover:bg-red-600">
+          {{ textSecundaryButton }}
+        </button>
+      </div>
+    </form>
+
+    <div
+      class="flex-1 hidden md:flex items-center justify-center h-[600px] w-full">
+      <img
+        (error)="loadErrorImage()"
+        [src]="urlImage"
+        *ngIf="isValidUrl"
+        alt="Image preview"
+        class="object-contain max-w-[400px] max-h-[400px]" />
+    </div>
+  </div>
+</section>
