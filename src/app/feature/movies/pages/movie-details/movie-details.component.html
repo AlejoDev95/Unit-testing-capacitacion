@@ -1,0 +1,36 @@
+<section
+  class="container mx-auto flex flex-col md:flex-row gap-4 md:max-h-[600px]">
+  <div class="relative flex-1 h-full w-full flex justify-center items-center">
+    <img
+      class="object-contain rounded-md"
+      [src]="movie.image"
+      [alt]="movie.title" />
+  </div>
+
+  <div class="flex-1 flex flex-col gap-5">
+    <h2 class="text-center font-semibold text-2xl">
+      {{ movie.title }} ({{ movie.category | titlecase }})
+    </h2>
+    <p class="break-all">{{ movie.description }}</p>
+    <p>
+      Date: <span class="font-semibold">{{ movie.releaseDate | date }}</span>
+    </p>
+    <button
+      (click)="goToBack()"
+      class="bg-amber-400 py-1.5 px-2 rounded-md transition duration-300 hover:bg-amber-500 hover:text-white">
+      Back
+    </button>
+
+    <button
+      (click)="goToEdit()"
+      class="bg-cyan-400 py-1.5 px-2 rounded-md transition duration-300 hover:bg-cyan-500 hover:text-white">
+      Edit
+    </button>
+
+    <button
+      (click)="deleteMovie()"
+      class="bg-red-400 py-1.5 px-2 rounded-md transition duration-300 hover:bg-red-500 hover:text-white">
+      Delete
+    </button>
+  </div>
+</section>
