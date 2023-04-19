@@ -1,6 +1,6 @@
 import { Calculator } from './calculator';
 
-fdescribe('Calculator', () => {
+describe('Calculator', () => {
   let calculator: Calculator;
 
   beforeEach(() => {
