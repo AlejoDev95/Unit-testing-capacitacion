@@ -3,7 +3,7 @@ import { ImcService } from './imc.service';
 import { MasterService } from './master.service';
 import { IMCMockService } from '../../mock/imc.service.mock';
 
-fdescribe('Master service', () => {
+describe('Master service', () => {
   let masterService: MasterService;
   let imcService: jasmine.SpyObj<ImcService>;
 

@@ -24,7 +24,8 @@ export class MovieService {
     }
 
     return this.http.get<Movie[]>(this.baseUrl, { params }).pipe(
-      retry(3),
+      // TODO: Se explica junto a fakeAsync y tick
+      // retry(3),
       catchError((error: HttpErrorResponse) => {
         if (error.status === HttpStatusCode.BadRequest) {
           return throwError(
