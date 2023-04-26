@@ -42,7 +42,7 @@ export class LoginComponent {
         tap((data: Users[]) => {
           if (data.length > 0) {
             this.isUserValid = false;
-            this.router.navigate(['movies']);
+            this.router.navigate(['private', 'movies']);
             return;
           }
           this.isUserValid = true;

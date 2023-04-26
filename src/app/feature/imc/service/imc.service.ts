@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class ImcService {
   public calculateIMC(weight: number, height: number): string {
     const result = Math.round(weight / height ** 2);

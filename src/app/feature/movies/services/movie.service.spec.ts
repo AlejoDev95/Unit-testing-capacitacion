@@ -11,7 +11,7 @@ import { TokenInterceptor } from '../../../core/interceptor/token.interceptor';
 import { generateOneMovie } from '../../../mock/movie.mock';
 import { CreateMovieDTO, UpdateMovieDTO } from '../models/movies';
 
-fdescribe('Movie Service', () => {
+describe('Movie Service', () => {
   let movieService: MovieService;
   let httpController: HttpTestingController;
   let tokenService: TokenService;

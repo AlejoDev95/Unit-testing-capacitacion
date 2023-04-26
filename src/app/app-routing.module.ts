@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
@@ -13,9 +14,20 @@ const routes: Routes = [
       import('./feature/auth/auth.module').then(m => m.AuthModule),
   },
   {
-    path: 'movies',
-    loadChildren: () =>
-      import('./feature/movies/movies.module').then(m => m.MoviesModule),
+    path: 'private',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'movies',
+        loadChildren: () =>
+          import('./feature/movies/movies.module').then(m => m.MoviesModule),
+      },
+      {
+        path: 'imc',
+        loadChildren: () =>
+          import('./feature/imc/imc.module').then(m => m.ImcModule),
+      },
+    ],
   },
 ];
 

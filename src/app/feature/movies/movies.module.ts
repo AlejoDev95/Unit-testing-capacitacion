@@ -11,7 +11,6 @@ import { MovieDetailsComponent } from './pages/movie-details/movie-details.compo
 import { MovieRegisterComponent } from './pages/movie-register/movie-register.component';
 import { MovieListComponent } from './pages/movies-list/movies-list.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
-import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { HeaderComponent } from './components/header/header.component';
     MovieDetailsComponent,
     MovieRegisterComponent,
     MovieCardComponent,
-    HeaderComponent,
     MovieListComponent,
   ],
   imports: [

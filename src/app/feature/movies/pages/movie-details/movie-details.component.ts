@@ -33,12 +33,12 @@ export class MovieDetailsComponent implements OnInit {
   public goToBack = (): void => this.location.back();
 
   public goToEdit = (): Promise<boolean> =>
-    this.router.navigateByUrl(`movies/register/${this.movie.id}`);
+    this.router.navigateByUrl(`private/movies/register/${this.movie.id}`);
 
   public deleteMovie = (): Subscription =>
     this.movieService
       .delete(this.movie.id)
-      .subscribe(() => this.router.navigateByUrl(`movies/list`));
+      .subscribe(() => this.router.navigateByUrl(`private/movies/list`));
 
   private listenToDetailsMovie(): void {
     this.activatedRoute.paramMap

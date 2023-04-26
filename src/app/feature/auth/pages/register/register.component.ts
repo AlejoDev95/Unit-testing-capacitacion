@@ -44,7 +44,7 @@ export class RegisterComponent {
 
     this.authService
       .registerUser(this.registerForm.value)
-      .pipe(tap(() => this.router.navigate(['movies'])))
+      .pipe(tap(() => this.router.navigate(['private', 'movies'])))
       .subscribe();
   }
 

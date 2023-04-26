@@ -73,7 +73,7 @@ export class MovieRegisterComponent implements OnInit, OnDestroy {
       ? this.movieService.update(this.idMovie, this.registerForm.value)
       : this.movieService.create(this.registerForm.value);
 
-    request.subscribe(() => this.router.navigateByUrl('movies/list'));
+    request.subscribe(() => this.router.navigateByUrl('private/movies/list'));
   }
 
   public clearForm(): void {

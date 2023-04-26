@@ -12,7 +12,7 @@ export class MovieCardComponent {
 
   constructor(private router: Router) {}
 
-  public verDetalles() {
-    this.router.navigate(['movies/details', this.movie.id]);
+  public seeDetails() {
+    this.router.navigate(['private/movies/details', this.movie.id]);
   }
 }

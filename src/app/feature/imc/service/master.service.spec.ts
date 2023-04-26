@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { ImcService } from './imc.service';
 import { MasterService } from './master.service';
-import { IMCMockService } from '../../mock/imc.service.mock';
+import { IMCMockService } from './../../../mock/imc.service.mock';
 
 describe('Master service', () => {
   let masterService: MasterService;
