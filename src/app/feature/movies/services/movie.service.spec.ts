@@ -138,7 +138,7 @@ describe('Movie Service', () => {
   });
 
   describe('create Method', () => {
-    fit('should return a new Movie', doneFn => {
+    it('should return a new Movie', doneFn => {
       const mockData = generateOneMovie();
       const movieDTO: CreateMovieDTO = {
         category: 'Animation',
@@ -162,7 +162,7 @@ describe('Movie Service', () => {
   });
 
   describe('update Method', () => {
-    fit('should return a Movie updated', doneFn => {
+    it('should return a Movie updated', doneFn => {
       const id = '1';
       const mockData = generateOneMovie();
       const movieDTO: UpdateMovieDTO = { category: 'Animation' };
@@ -181,7 +181,7 @@ describe('Movie Service', () => {
   });
 
   describe('delete Method', () => {
-    fit('should delete one movie', doneFn => {
+    it('should delete one movie', doneFn => {
       const id = '1';
       const mockData = generateOneMovie();
 
