@@ -87,3 +87,48 @@ class HostComponent {
     this.selectedPerson = person;
   };
 }
+
+fdescribe('HostComponent from HostComponent', () => {
+  let component: HostComponent;
+  let fixture: ComponentFixture<HostComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [PersonComponent, HostComponent],
+      providers: [ImcService],
+    }).compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(HostComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('Should display the person name', () => {
+    const expectName = component.person.name;
+    const titleName: HTMLElement = fixture.debugElement.query(
+      By.css('app-person h3')
+    ).nativeElement;
+
+    expect(titleName.textContent).toContain(expectName);
+  });
+
+  it('should select a person when the button is clicked', () => {
+    const selectedButton: DebugElement = fixture.debugElement.query(
+      By.css('app-person button[data-id="person-button"]')
+    );
+    const spyPerson = spyOn(component, 'getSelectedPerson');
+
+    spyPerson.and.callThrough();
+    selectedButton.triggerEventHandler('click');
+    fixture.detectChanges();
+
+    expect(component.selectedPerson).toEqual(component.person);
+    expect(spyPerson).toHaveBeenCalled();
+  });
+});
