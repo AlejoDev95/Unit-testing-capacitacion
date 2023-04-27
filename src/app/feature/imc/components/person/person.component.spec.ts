@@ -1,11 +1,11 @@
-import { DebugElement } from '@angular/core';
+import { Component, DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { Person } from '../../class/person';
 import { ImcService } from '../../service/imc.service';
 import { PersonComponent } from './person.component';
 
-fdescribe('Person component', () => {
+describe('Person component', () => {
   let component: PersonComponent;
   let fixture: ComponentFixture<PersonComponent>;
   let imcService: jasmine.SpyObj<ImcService>;
@@ -73,3 +73,17 @@ fdescribe('Person component', () => {
     expect(selectedPerson).toEqual(expectPerson);
   });
 });
+
+@Component({
+  template: ` <app-person
+    [person]="person"
+    (selectedPerson)="getSelectedPerson($event)" />`,
+})
+class HostComponent {
+  public person = new Person('Usuario-test', 24, 80, 1.85);
+  public selectedPerson: Person | undefined;
+
+  public getSelectedPerson = (person: Person) => {
+    this.selectedPerson = person;
+  };
+}
