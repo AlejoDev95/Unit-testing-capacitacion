@@ -36,11 +36,7 @@ export class MovieListComponent implements OnInit {
   }
 
   public getInfoText(): string {
-    if (
-      this.status === 'init' ||
-      this.status === 'loading' ||
-      this.status === 'success'
-    ) {
+    if (this.status === 'init' || this.status === 'loading') {
       return 'Loading';
     }
 

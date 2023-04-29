@@ -20,13 +20,15 @@
   </ng-template>
 
   <div
+    data-id="status"
     class="animate-fade-in bg-amber-200 w-full p-4 text-center rounded-md"
-    *ngIf="status === 'loading'; else loadMore">
+    *ngIf="status === 'loading' || status === 'error'; else loadMore">
     <p class="animate-pulse font-semibold text-lg">{{ getInfoText() }}</p>
   </div>
 
   <ng-template #loadMore>
     <button
+      data-id="load-more"
       *ngIf="movieList.length > 0"
       class="animate-fade-in bg-amber-400 py-3 rounded-md"
       (click)="loadMoreMovies()">
