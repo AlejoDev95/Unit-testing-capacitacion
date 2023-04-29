@@ -6,7 +6,7 @@ import { ImcComponent } from './imc.component';
 import { PersonComponent } from './components/person/person.component';
 import { ImcService } from './service/imc.service';
 
-fdescribe('IMC component', () => {
+describe('IMC component', () => {
   let component: ImcComponent;
   let fixture: ComponentFixture<ImcComponent>;
 
@@ -42,7 +42,7 @@ fdescribe('IMC component', () => {
     expect(peopleDebug.length).not.toBe(5);
   });
 
-  fit('should show person selected', () => {
+  it('should show person selected', () => {
     const index = 1;
     const debugElement: DebugElement = fixture.debugElement;
     component.listOfPeople = [
