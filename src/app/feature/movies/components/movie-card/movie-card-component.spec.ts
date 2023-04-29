@@ -6,7 +6,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MovieCardComponent } from './movie-card.component';
 import { generateOneMovie } from '../../../../mock/movie.mock';
 
-fdescribe('Movie Card Component', () => {
+describe('Movie Card Component', () => {
   let component: MovieCardComponent;
   let fixture: ComponentFixture<MovieCardComponent>;
   let router: Router;

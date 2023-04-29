@@ -5,7 +5,7 @@ export const generateOneMovie = (): Movie => ({
   id: faker.datatype.uuid(),
   category: faker.random.word(),
   description: faker.random.words(),
-  image: faker.image.imageUrl(),
+  image: 'img-png',
   releaseDate: faker.date.future(10).toDateString(),
   title: faker.random.word(),
 });

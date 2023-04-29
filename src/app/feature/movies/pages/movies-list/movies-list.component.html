@@ -1,16 +1,16 @@
 <section class="flex flex-col gap-6">
   <h2 class="text-center text-2xl font-semibold">Movie List</h2>
 
-  <ng-container *ngIf="movieList.length > 0; else templateA">
+  <ng-container *ngIf="movieList.length > 0">
     <div
-      class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 h-auto gap-4 relative">
+      class="animate-fade-in grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 h-auto gap-4 relative">
       <app-movie-card *ngFor="let movie of movieList" [movie]="movie" />
     </div>
   </ng-container>
 
-  <ng-template #templateA>
+  <ng-template *ngIf="movieList.length === 0 && status !== 'loading'">
     <div class="flex flex-col items-center justify-center gap-y-4">
-      <h3>No hay peliculas disponibles</h3>
+      <h3>There are no movies</h3>
       <a
         class="text-white bg-cyan-500 py-2 px-4 rounded-md hover:bg-cyan-600 transition-colors duration-300"
         routerLink="/movies/register">
@@ -19,7 +19,18 @@
     </div>
   </ng-template>
 
-  <button class="bg-amber-400 py-3 rounded-md" (click)="loadMoreMovies()">
-    Add movies
-  </button>
+  <div
+    class="animate-fade-in bg-amber-200 w-full p-4 text-center rounded-md"
+    *ngIf="status === 'loading'; else loadMore">
+    <p class="animate-pulse font-semibold text-lg">{{ getInfoText() }}</p>
+  </div>
+
+  <ng-template #loadMore>
+    <button
+      *ngIf="movieList.length > 0"
+      class="animate-fade-in bg-amber-400 py-3 rounded-md"
+      (click)="loadMoreMovies()">
+      Add movies
+    </button>
+  </ng-template>
 </section>

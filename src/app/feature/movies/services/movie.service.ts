@@ -5,7 +5,7 @@ import {
   HttpStatusCode,
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, retry, throwError } from 'rxjs';
+import { catchError, delay, Observable, retry, throwError } from 'rxjs';
 import { Movie, CreateMovieDTO, UpdateMovieDTO } from '../models/movies';
 import { generateID } from '../../../utils/generateID';
 
@@ -26,6 +26,7 @@ export class MovieService {
     return this.http.get<Movie[]>(this.baseUrl, { params }).pipe(
       // TODO: Se explica junto a fakeAsync y tick
       // retry(3),
+      delay(3000),
       catchError((error: HttpErrorResponse) => {
         if (error.status === HttpStatusCode.BadRequest) {
           return throwError(
