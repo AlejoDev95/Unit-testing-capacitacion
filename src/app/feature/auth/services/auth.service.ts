@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CreateUserDTO, Users } from '../model/auth';
-import { Observable, tap } from 'rxjs';
+import { Observable, map, tap } from 'rxjs';
 import { generateID } from '../../../utils/generateID';
 import { TokenService } from '../../../core/service/token.service';
 
@@ -28,5 +28,12 @@ export class AuthService {
     return this.http
       .get<Users[]>(`${this.baseUrl}`)
       .pipe(tap(() => this.token.deleteToken()));
+  }
+
+  public validateEmail(emailAddress: string): Observable<boolean> {
+    return this.http.get<Users[]>(this.baseUrl).pipe(
+      map(listOfUser => listOfUser.map(user => user.email)),
+      map(listOfEmail => listOfEmail.some(email => email === emailAddress))
+    );
   }
 }
