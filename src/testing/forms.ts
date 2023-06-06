@@ -32,3 +32,19 @@ export function setCheckboxValue<T>(
   inputEl.dispatchEvent(new Event('change'));
   inputEl.dispatchEvent(new Event('blur'));
 }
+
+export function setSelectValue<T>(
+  fixture: ComponentFixture<T>,
+  selector: string,
+  value: string,
+  withTestById = true
+) {
+  const inputDe = withTestById
+    ? queryById(fixture, selector)
+    : query(fixture, selector);
+  const inputEl: HTMLSelectElement = inputDe.nativeElement;
+
+  inputEl.value = value;
+  inputEl.dispatchEvent(new Event('change'));
+  inputEl.dispatchEvent(new Event('blur'));
+}
